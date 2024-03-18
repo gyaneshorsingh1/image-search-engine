@@ -44,3 +44,40 @@ showMorebtn.addEventListener("click",(e)=>{
     searchImages();
 })
 
+
+
+
+
+//toggle function//
+// var toggleBtn = document.querySelector("#toggle-btn");
+var body = document.querySelector("body");
+// let toggle = true;
+// toggleBtn.addEventListener('click',function(){
+//     if(toggle){
+//         body.style.backgroundColor = 'white';
+//         toggleBtn.classList.remove('toggle1');
+//         toggleBtn.classList.add('toggle1-active');
+
+//     }else{
+//         body.style.backgroundColor = "black";
+//         toggleBtn.classList.remove("toggle1-active");
+//         toggleBtn.classList.add("toggle1");
+//     }
+// })
+const element = document.getElementById('toggle-btn');
+const toggle2 =  document.querySelector("#toggle2");
+const h2 = document.querySelector("section h2");
+const resultBox = document.querySelector("#result-container");
+const showMoreBtn = document.querySelector("#btn");
+
+element.addEventListener('click', function() {
+    this.classList.toggle('toggle1');
+    this.classList.toggle('toggle1-active');
+    body.classList.toggle('body');
+    body.classList.toggle('body2');
+    toggle2.classList.toggle("toggle2");
+    toggle2.classList.toggle("toggle2-active");
+    h2.classList.toggle('h2');
+    showMoreBtn.classList.toggle("btn");
+
+});
